@@ -32,6 +32,11 @@ dependencies {
 launch4j {
     mainClassName = 'SwingDemo'
 }
+
+build {
+    finalizedBy createExe
+}
+
 buildscript {
     repositories {
         gradlePluginPortal()
